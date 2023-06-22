@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Built the aspect class. Edited the builder pattern.">
+    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" afterDir="false" />
     </list>
@@ -26,6 +26,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2RTWONap1EizCpstnAk6jrZIesY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -85,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687274522659</updated>
-      <workItem from="1687274523700" duration="25607000" />
+      <workItem from="1687274523700" duration="25807000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit.">
       <created>1687281231990</created>
@@ -150,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687430082358</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;">
+      <created>1687434344595</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687434344595</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +185,7 @@
     <MESSAGE value="Creating AddressContact class. Needs Comments." />
     <MESSAGE value="Creating AddressContact class. Needs Comments. Implemented Builder Design pattern." />
     <MESSAGE value="Built the aspect class. Edited the builder pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="Built the aspect class. Edited the builder pattern." />
+    <MESSAGE value="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;" />
   </component>
 </project>
