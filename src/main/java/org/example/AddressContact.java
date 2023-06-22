@@ -41,6 +41,12 @@ public class AddressContact {
         return phoneNumber;
     }
 
+    @Override
+    public String toString(){
+        return "Name: " + name + ", Street: " + street + ", City: " + ", State: " + state + ", ZipCoe: " + zipCode +
+                ", Phone Number: " + phoneNumber;
+    }
+
     public static class Builder {
         private String name;
         private String street;

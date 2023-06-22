@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Creating AddressContact class. Needs Comments.">
+    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Creating AddressContact class. Needs Comments. Implemented Builder Design pattern.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressContact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687274522659</updated>
-      <workItem from="1687274523700" duration="21645000" />
+      <workItem from="1687274523700" duration="23534000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit.">
       <created>1687281231990</created>
@@ -116,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687361146181</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creating AddressContact class. Needs Comments. Implemented Builder Design pattern.">
+      <created>1687381571967</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687381571967</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +148,7 @@
     <MESSAGE value="Creating AddressBook class. Added add, delete and update methods." />
     <MESSAGE value="Creating AddressBook class. Added comments." />
     <MESSAGE value="Creating AddressContact class. Needs Comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating AddressContact class. Needs Comments." />
+    <MESSAGE value="Creating AddressContact class. Needs Comments. Implemented Builder Design pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating AddressContact class. Needs Comments. Implemented Builder Design pattern." />
   </component>
 </project>
