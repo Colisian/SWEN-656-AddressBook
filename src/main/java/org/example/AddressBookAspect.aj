@@ -1,3 +1,4 @@
+
 package org.example;
 
 import javax.management.MBeanFeatureInfo;
@@ -8,12 +9,21 @@ import java.io.PrintWriter;
 
 public aspect AddressBookAspect {
 
-    before(AddressContact contact) : updateContact(contact, *){
-        String oldData = contact.toString();
+    pointcut updateContactPointcut(AddressContact outdateContact, AddressContact newContact):
+            execution(void AddressBook.updateContact(*, *)) ;
+
+    // Pointcut for the deleteContact() method
+    pointcut deleteContactPointcut(AddressContact contact):
+            execution(void AddressBook.deleteContact(*));
+
+
+
+    before(AddressContact outdateContact, AddressContact newContact) : updateContactPointcut(outdateContact, newContact){
+        String oldData = outdateContact.toString();
         writeToFile(oldData);
     }
 
-    before(AddressContact contact) : deleteContact(contact, *){
+    before(AddressContact contact) : deleteContactPointCut(contact){
         String currentData = contact.toString();
         writeToFile(currentData);
 
