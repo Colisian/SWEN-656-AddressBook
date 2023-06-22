@@ -11,6 +11,7 @@ public class AddressBookApp {
                 .city("Prince Georges")
                 .state("MD")
                 .zipCode("21103")
-                .phoneNumber("4438503321").build();
+                .phoneNumber("4438503321")
+                .build();
     }
 }
