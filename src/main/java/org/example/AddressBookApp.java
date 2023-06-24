@@ -34,7 +34,11 @@ public class AddressBookApp {
 
         addressBook.addContact(contact1);
         addressBook.addContact(contact2);
+        addressBook.displayAddressBook();
         addressBook.updateContact(contact1, newContact1);
+        addressBook.displayAddressBook();
+        addressBook.deleteContact(contact2);
+        addressBook.displayAddressBook();
 
     }
 }

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;">
+    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Resolved error in Aspect class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687274522659</updated>
-      <workItem from="1687274523700" duration="39162000" />
+      <workItem from="1687274523700" duration="41815000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit.">
       <created>1687281231990</created>
@@ -181,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687444144880</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Resolved error in Aspect class.">
+      <created>1687573445322</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687573445322</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +216,7 @@
     <MESSAGE value="Built the aspect class. Edited the builder pattern." />
     <MESSAGE value="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;" />
     <MESSAGE value="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;" />
+    <MESSAGE value="Resolved error in Aspect class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved error in Aspect class." />
   </component>
 </project>

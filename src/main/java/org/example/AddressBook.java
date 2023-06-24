@@ -31,5 +31,11 @@ public class AddressBook {
             System.out.println("Contact not found: " + outdateContact);
         }
     }
-
+    public void displayAddressBook(){
+        System.out.println("Address Book: ");
+        for (int i = 0; i < contacts.size(); i++) {
+            AddressContact contact = contacts.get(i);
+            System.out.println(contact);
+        }
+    }
 }
