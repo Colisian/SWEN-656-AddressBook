@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;">
+    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressContact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687274522659</updated>
-      <workItem from="1687274523700" duration="32442000" />
+      <workItem from="1687274523700" duration="39162000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit.">
       <created>1687281231990</created>
@@ -176,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687434652877</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;">
+      <created>1687444144880</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687444144880</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +207,7 @@
     <MESSAGE value="Creating AddressContact class. Needs Comments. Implemented Builder Design pattern." />
     <MESSAGE value="Built the aspect class. Edited the builder pattern." />
     <MESSAGE value="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ran test for AddressBookApp. Getting Error: &quot;ajc: can't find referenced pointcut updateContact&quot;" />
+    <MESSAGE value="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;" />
   </component>
 </project>

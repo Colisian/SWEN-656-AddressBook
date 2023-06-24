@@ -2,38 +2,36 @@
 package org.example;
 
 import javax.management.MBeanFeatureInfo;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 public aspect AddressBookAspect {
+    private String filename = "address_book.txt";
 
+    //specifies that the pointcut will match method calls to 'void AddressBook.updateContact(AddressContact contact, AddressContact, contact)'
     pointcut updateContactPointcut(AddressContact outdateContact, AddressContact newContact):
-            execution(void AddressBook.updateContact(*, *)) ;
+            call(void AddressBook.updateContact(AddressContact, AddressContact)) && args(outdateContact, newContact);
 
-    // Pointcut for the deleteContact() method
     pointcut deleteContactPointcut(AddressContact contact):
-            execution(void AddressBook.deleteContact(*));
+            call(void AddressBook.deleteContact(AddressContact)) && args(contact);
 
-
-
-    before(AddressContact outdateContact, AddressContact newContact) : updateContactPointcut(outdateContact, newContact){
-        String oldData = outdateContact.toString();
-        writeToFile(oldData);
+    //runs before updateContactPointcut is matched. Captures the outdated and new contact objects passed in updateContact
+    before(AddressContact outdateContact, AddressContact newContact): updateContactPointcut(outdateContact, newContact){
+        writeToFile(outdateContact.toString());
     }
 
-    before(AddressContact contact) : deleteContactPointCut(contact){
-        String currentData = contact.toString();
-        writeToFile(currentData);
-
+    //
+    before(AddressContact contact): deleteContactPointcut(contact){
+        writeToFile(contact.toString());
     }
-    private void writeToFile(String data){
+
+    private void writeToFile(String data) {
         try {
-            FileWriter fileWriter = new FileWriter("address_book.txt", true);
-            PrintWriter printWriter = new PrintWriter(fileWriter);
-        } catch (IOException e){
-            e.printStackTrace();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true));
+            writer.write(data);
+            writer.newLine();
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("Error writing to file " + e.getMessage());
         }
     }
 }
