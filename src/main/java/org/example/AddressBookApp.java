@@ -55,6 +55,14 @@ public class AddressBookApp {
 
         System.out.println("\nEnter name of contact to delete: ");
         String contactName = scanner.nextLine();
+        AddressContact contactToDelete = addressBook.findContactByName(contactName);
+        if (contactToDelete != null){
+            addressBook.deleteContact(contactToDelete);
+            System.out.println(contactName + " contact was deleted.");
+        } else {
+            System.out.println("Did not find contact.");
+        }
+        addressBook.displayAddressBook();
 /*
         AddressContact contact2 = new AddressContact.Builder()
                 .name("Jane Doe")
