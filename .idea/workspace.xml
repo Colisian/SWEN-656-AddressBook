@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Created displayAddressBook method to show current AddressBook.">
+    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Added message in aspect class to notify user when contact is written to file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookAspect.aj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687274522659</updated>
-      <workItem from="1687274523700" duration="43705000" />
+      <workItem from="1687274523700" duration="46335000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit.">
       <created>1687281231990</created>
@@ -195,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687622473258</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added message in aspect class to notify user when contact is written to file.">
+      <created>1687709296675</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687709296675</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +231,7 @@
     <MESSAGE value="Ran test for AddressBookApp: Works as expected without AspectClass. Getting Error: &quot;ajc: formal unbound in pointcut.&quot;" />
     <MESSAGE value="Resolved error in Aspect class." />
     <MESSAGE value="Created displayAddressBook method to show current AddressBook." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created displayAddressBook method to show current AddressBook." />
+    <MESSAGE value="Added message in aspect class to notify user when contact is written to file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added message in aspect class to notify user when contact is written to file." />
   </component>
 </project>
