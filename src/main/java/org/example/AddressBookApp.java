@@ -52,6 +52,9 @@ public class AddressBookApp {
 
         System.out.println("\nAddress Book Contacts");
         addressBook.displayAddressBook();
+
+        System.out.println("\nEnter name of contact to delete: ");
+        String contactName = scanner.nextLine();
 /*
         AddressContact contact2 = new AddressContact.Builder()
                 .name("Jane Doe")

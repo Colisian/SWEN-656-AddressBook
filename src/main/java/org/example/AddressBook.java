@@ -31,6 +31,17 @@ public class AddressBook {
             System.out.println("Contact not found: " + outdateContact);
         }
     }
+
+    public AddressContact findContactByName(String name){
+        for (int i = 0; i < contacts.size(); i++) {
+            AddressContact contact = contacts.get(i);
+            if (contact.getName().equalsIgnoreCase(name)){
+                return contact;
+            }
+        }
+        return null;
+    }
+
     public void displayAddressBook(){
         System.out.println("Address Book: ");
         for (int i = 0; i < contacts.size(); i++) {

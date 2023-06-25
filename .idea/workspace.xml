@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Added message in aspect class to notify user when contact is written to file.">
+    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Added functionality so user can input individual attributes. Will need to add abilty to delete specific contacts and updates specific contacts.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687274522659</updated>
-      <workItem from="1687274523700" duration="46335000" />
+      <workItem from="1687274523700" duration="47462000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit.">
       <created>1687281231990</created>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687709296675</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added functionality so user can input individual attributes. Will need to add abilty to delete specific contacts and updates specific contacts.">
+      <created>1687712371103</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687712371103</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +240,7 @@
     <MESSAGE value="Resolved error in Aspect class." />
     <MESSAGE value="Created displayAddressBook method to show current AddressBook." />
     <MESSAGE value="Added message in aspect class to notify user when contact is written to file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added message in aspect class to notify user when contact is written to file." />
+    <MESSAGE value="Added functionality so user can input individual attributes. Will need to add abilty to delete specific contacts and updates specific contacts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality so user can input individual attributes. Will need to add abilty to delete specific contacts and updates specific contacts." />
   </component>
 </project>
