@@ -69,7 +69,7 @@ public class AddressBookApp {
 
 
 
-        private static AddressContact createContact(Scanner scanner){
+        public static AddressContact createContact(Scanner scanner){
             System.out.println("Name: ");
             String name = scanner.nextLine();
 

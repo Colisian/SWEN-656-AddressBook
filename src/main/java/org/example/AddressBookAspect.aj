@@ -18,13 +18,12 @@ public aspect AddressBookAspect {
     before(AddressContact outdateContact, AddressContact newContact): updateContactPointcut(outdateContact, newContact){
         writeToFile(outdateContact.toString());
     }
-
     //
     before(AddressContact contact): deleteContactPointcut(contact){
         writeToFile(contact.toString());
     }
 
-    private void writeToFile(String data) {
+    private synchronized void writeToFile(String data) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true));
             writer.write(data);
