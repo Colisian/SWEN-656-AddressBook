@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Added a findContactByName method in AddressBook class.">
+    <list default="true" id="dd376d79-f9a0-4d92-ac07-b3b6958ad68a" name="Changes" comment="Need to add an option to search for a contact to update instead of delete.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddressBookApp.java" afterDir="false" />
     </list>
@@ -22,7 +22,37 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="AOPBranch2" />
+                    <option name="lastUsedInstant" value="1687716326" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1687716320" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +76,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "aspect.path.notification.shown": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "AOPBranch2",
     "last_opened_file_path": "C:/Users/Black/Downloads/aspectj-1.9.19.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -56,7 +86,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -77,6 +107,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AddressBookApp" />
+        <item itemvalue="Application.AddressBookApp" />
+        <item itemvalue="Application.AddressBookApp" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687274522659</updated>
-      <workItem from="1687274523700" duration="48593000" />
+      <workItem from="1687274523700" duration="52810000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit.">
       <created>1687281231990</created>
@@ -216,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687713451050</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Need to add an option to search for a contact to update instead of delete.">
+      <created>1687714616990</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687714616990</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +287,11 @@
     <MESSAGE value="Added message in aspect class to notify user when contact is written to file." />
     <MESSAGE value="Added functionality so user can input individual attributes. Will need to add abilty to delete specific contacts and updates specific contacts." />
     <MESSAGE value="Added a findContactByName method in AddressBook class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a findContactByName method in AddressBook class." />
+    <MESSAGE value="Need to add an option to search for a contact to update instead of delete." />
+    <option name="LAST_COMMIT_MESSAGE" value="Need to add an option to search for a contact to update instead of delete." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
