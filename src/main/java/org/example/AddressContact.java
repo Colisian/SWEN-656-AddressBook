@@ -43,7 +43,7 @@ public class AddressContact {
 
     @Override
     public String toString(){
-        return "Name: " + name + ", Street: " + street + ", City: " + city + ", State: " + state + ", ZipCoe: " + zipCode +
+        return "Name: " + name + ", Street: " + street + ", City: " + city + ", State: " + state + ", ZipCode: " + zipCode +
                 ", Phone Number: " + phoneNumber;
     }
 

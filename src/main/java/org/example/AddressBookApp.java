@@ -5,16 +5,71 @@ import java.util.Scanner;
 
 public class AddressBookApp {
     public static void main(String[] args) {
+        AddressBook addressbook = new AddressBook();
 
-        AddressBook addressBook = new AddressBook();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Address Book Application");
-        System.out.println("Enter Contact Details");
 
-        boolean addMoreContact = true;
-        while (addMoreContact) {
+        while (true) {
+            System.out.println("1. Add a contact");
+            System.out.println("2. Search and Update contact");
+            System.out.println("3. Search and delete a contact");
+            System.out.println("4. Display all contacts");
+            System.out.println("5. Exit");
+            System.out.print("Enter number of your option: ");
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
+            switch (choice) {
+                case 1:
+                    //Add a contact
+                    AddressContact contact = createContact(scanner);
+                    addressbook.addContact(contact);
+                    break;
+                case 2:
+                    //Search and update
+                    System.out.println("Enter name of contact to update: ");
+                    String searchName = scanner.nextLine();
+                    AddressContact foundContact = addressbook.findContactByName(searchName);
+                    if (foundContact != null) {
+                        AddressContact updatedContact = createContact(scanner);
+                        addressbook.updateContact(foundContact, updatedContact);
+                        System.out.println("Contact updated.");
+                    } else {
+                        System.out.println("Contact not found");
+                    }
+                    break;
+                case 3:
+                    //Search and delete
+                    System.out.println("Enter the name of the contact to delete: ");
+                    String deleteName = scanner.nextLine();
+                    AddressContact deleteContact = addressbook.findContactByName(deleteName);
+                    if (deleteContact != null) {
+                        addressbook.deleteContact(deleteContact);
+                        System.out.println("Contact deleted");
+                    } else {
+                        System.out.println("Contact not found.");
+                    }
+                    break;
+                case 4:
+                    addressbook.displayAddressBook();
+                    break;
+                case 5:
+                    scanner.close();
+                    System.out.println("Exiting the system.");
+                    return;
+                default:
+                    System.out.println("Choose again.");
+            }
+
+            System.out.println();
+        }
+    }
+
+
+
+
+        public static AddressContact createContact(Scanner scanner){
             System.out.println("Name: ");
             String name = scanner.nextLine();
 
@@ -34,7 +89,7 @@ public class AddressBookApp {
             String phoneNumber = scanner.nextLine();
 
 
-            AddressContact contact = new AddressContact.Builder()
+            return new AddressContact.Builder()
                     .name(name)
                     .street(street)
                     .city(city)
@@ -42,27 +97,8 @@ public class AddressBookApp {
                     .zipCode(zipCode)
                     .phoneNumber(phoneNumber)
                     .build();
-
-            addressBook.addContact(contact);
-
-            System.out.println("\nAdd another Contact? (Y/N): ");
-            String choice = scanner.nextLine();
-            addMoreContact = choice.equalsIgnoreCase("Y");
         }
 
-        System.out.println("\nAddress Book Contacts");
-        addressBook.displayAddressBook();
-
-        System.out.println("\nEnter name of contact to delete: ");
-        String contactName = scanner.nextLine();
-        AddressContact contactToDelete = addressBook.findContactByName(contactName);
-        if (contactToDelete != null){
-            addressBook.deleteContact(contactToDelete);
-            System.out.println(contactName + " contact was deleted.");
-        } else {
-            System.out.println("Did not find contact.");
-        }
-        addressBook.displayAddressBook();
 /*
         AddressContact contact2 = new AddressContact.Builder()
                 .name("Jane Doe")
@@ -93,4 +129,3 @@ public class AddressBookApp {
 
 
     }
-}
