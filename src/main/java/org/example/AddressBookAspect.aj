@@ -30,6 +30,7 @@ public aspect AddressBookAspect {
             writer.write(data);
             writer.newLine();
             writer.close();
+            System.out.println("Contact data has been written to file: " + filename);
         } catch (IOException e) {
             System.out.println("Error writing to file " + e.getMessage());
         }
